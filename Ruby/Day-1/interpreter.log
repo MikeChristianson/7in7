@@ -1,0 +1,158 @@
+mr-flibble:7in7 mike$ irb
+>> puts 'hello, world'
+hello, world
+=> nil
+>> language = 'Ruby'
+=> "Ruby"
+>> puts 'hello, #{language}'
+hello, #{language}
+=> nil
+>> puts "hello, #{language}"
+hello, Ruby
+=> nil
+>> language = 'my Ruby'
+=> "my Ruby"
+>> puts "hello, #{language}"
+hello, my Ruby
+=> nil
+>> 4
+=> 4
+>> 4.clas
+NoMethodError: undefined method `clas' for 4:Fixnum
+	from (irb):8
+>> 4.class
+=> Fixnum
+>> 4 + 4
+=> 8
+>> 4.methods
+=> ["%", "odd?", "inspect", "prec_i", "<<", "tap", "div", "&", "clone", ">>", "public_methods", "__send__", "instance_variable_defined?", "equal?", "freeze", "to_sym", "*", "ord", "+", "extend", "next", "send", "round", "methods", "prec_f", "-", "even?", "singleton_method_added", "divmod", "hash", "/", "integer?", "downto", "dup", "object_id", "instance_variables", "|", "eql?", "size", "instance_eval", "truncate", "~", "id", "to_i", "singleton_methods", "modulo", "taint", "zero?", "times", "instance_variable_get", "frozen?", "to_enum", "display", "instance_of?", "^", "to_a", "+@", "-@", "quo", "instance_exec", "type", "**", "upto", "to_f", "<", "step", "protected_methods", "<=>", "between?", "==", "remainder", ">", "===", "to_int", "nonzero?", "pred", "instance_variable_set", "enum_for", "coerce", "respond_to?", "kind_of?", "floor", "succ", ">=", "method", "prec", "to_s", "<=", "fdiv", "class", "private_methods", "=~", "tainted?", "__id__", "abs", "untaint", "nil?", "chr", "id2name", "is_a?", "ceil", "[]"]
+>> x = 4
+=> 4
+>> x < 5
+=> true
+>> x <= 4
+=> true
+>> x > 4
+=> false
+>> false.class
+=> FalseClass
+>> true.class
+=> TrueClass
+>> true.class.methods
+=> ["private_class_method", "inspect", "name", "tap", "clone", "public_methods", "__send__", "method_defined?", "instance_variable_defined?", "autoload", "equal?", "freeze", "extend", "send", "const_defined?", "methods", "ancestors", "module_eval", "hash", "dup", "object_id", "instance_methods", "public_method_defined?", "instance_variables", "class_variable_defined?", "eql?", "constants", "instance_eval", "id", "module_exec", "instance_method", "singleton_methods", "const_missing", "taint", "autoload?", "instance_variable_get", "frozen?", "to_enum", "private_method_defined?", "public_instance_methods", "display", "instance_of?", "superclass", "to_a", "included_modules", "const_get", "instance_exec", "type", "<", "protected_methods", "<=>", "class_eval", "==", "class_variables", ">", "===", "instance_variable_set", "enum_for", "protected_instance_methods", "protected_method_defined?", "respond_to?", "kind_of?", ">=", "method", "public_class_method", "to_s", "<=", "const_set", "allocate", "class", "private_methods", "=~", "tainted?", "__id__", "class_exec", "untaint", "nil?", "private_instance_methods", "include?", "is_a?"]
+>> x = 4
+=> 4
+>> puts 'This appears to be false.' unless x == 4
+=> nil
+>> puts 'This appears to be true.' if x == 4
+This appears to be true.
+=> nil
+>> if x == 4
+>>   puts 'This appears to be true.'
+>> end
+This appears to be true.
+=> nil
+>> unless x == 4
+>>   puts 'This appears to be false.'
+>> else
+?>   puts 'This appears to be true.'
+>> end
+This appears to be true.
+=> nil
+>> puts 'This appears to be true.' if not true
+=> nil
+>> puts 'This appears to be true.' if !true
+=> nil
+>> x = x + 1 while x < 10
+=> nil
+>> x
+=> 10
+>> x
+=> 10
+>> x = x - 1 until x == 1
+=> nil
+>> x
+=> 1
+>> while x < 10
+>>   x = x + 1
+>>   puts x
+>> end
+2
+3
+4
+5
+6
+7
+8
+9
+10
+=> nil
+>> puts 'This appears to be true.' if 1
+This appears to be true.
+=> nil
+>> puts 'This appears to be true.' if 'random string'
+(irb):42: warning: string literal in condition
+This appears to be true.
+=> nil
+>> puts 'This appears to be true.' if 0
+This appears to be true.
+=> nil
+>> puts 'This appears to be true.' if true
+This appears to be true.
+=> nil
+>> puts 'This appears to be true.' if false
+=> nil
+>> puts 'This appears to be true.' if nil
+=> nil
+>> true and false
+=> false
+>> true or false
+=> true
+>> false or true
+=> true
+>> false && false
+=> false
+>> true && this_will_cause_an_error
+NameError: undefined local variable or method `this_will_cause_an_error' for main:Object
+	from (irb):51
+>> false && this_will_not_cause_an_error
+=> false
+>> true || this_will_not_cause_an_error
+=> true
+>> true or this_will_not_cause_an_error
+=> true
+>> true | this_will_cause_an_error
+NameError: undefined local variable or method `this_will_cause_an_error' for main:Object
+	from (irb):55
+>> true | false
+=> true
+>> 4 + 'four'
+TypeError: String can't be coerced into Fixnum
+	from (irb):57:in `+'
+	from (irb):57
+>> 4.class
+=> Fixnum
+>> (4.0).class
+=> Float
+>> 4 + 4.0
+=> 8.0
+>> def add_them_up
+>>   4 + 'four'
+>> end
+=> nil
+>> add_them_up
+TypeError: String can't be coerced into Fixnum
+	from (irb):62:in `+'
+	from (irb):62:in `add_them_up'
+	from (irb):64
+>> i = 0
+=> 0
+>> a = ['100', 100.0]
+=> ["100", 100.0]
+>> while i < 2
+>>   puts a[i].to_i
+>>   i = i + 1
+>> end
+100
+100
+=> nil
