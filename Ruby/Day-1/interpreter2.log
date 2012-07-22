@@ -1,0 +1,56 @@
+mr-flibble:Day-1 mike$ irb
+>> puts 'Hello, world.'
+Hello, world.
+=> nil
+>> 'Hello, Ruby'.methods
+=> ["upcase!", "zip", "find_index", "between?", "unpack", "each_slice", "to_f", "minmax", "lines", "sub", "methods", "send", "replace", "empty?", "group_by", "squeeze", "crypt", "gsub!", "taint", "instance_variable_defined?", "match", "downcase!", "take", "find_all", "min_by", "bytes", "enum_slice", "entries", "gsub", "singleton_methods", "instance_eval", "to_str", "first", "chop!", "intern", "nil?", "succ", "capitalize!", "take_while", "select", "max_by", "chars", "each_cons", "tr!", "protected_methods", "instance_exec", "display", "sort", "chop", "tainted?", "dump", "include?", "untaint", "instance_of?", "chomp!", "swapcase!", "drop", "equal?", "reject", "hex", "minmax_by", "sum", "enum_cons", "hash", "private_methods", "all?", "tr_s!", "sort_by", "chomp", "upcase", "method", "start_with?", "succ!", "kind_of?", "strip!", "freeze", "drop_while", "eql?", "next", "collect", "oct", "id", "slice", "casecmp", "grep", "strip", "any?", "delete!", "public_methods", "end_with?", "downcase", "%", "is_a?", "scan", "lstrip!", "cycle", "map", "member?", "tap", "type", "*", "split", "insert", "each_with_index", "+", "count", "lstrip", "one?", "squeeze!", "instance_variables", "__id__", "frozen?", "capitalize", "next!", "each_line", "object_id", "rstrip!", "to_a", "ljust", "respond_to?", "upto", "each", "inject", "tr", "slice!", "class", "reverse", "length", "enum_with_index", "rpartition", "rstrip", "<=>", "none?", "instance_variable_get", "find", "==", "swapcase", "__send__", "===", "min", "each_byte", "to_enum", "extend", "to_s", "rjust", "index", ">=", "size", "reduce", "tr_s", "<=", "clone", "reverse_each", "to_sym", "bytesize", "=~", "instance_variable_set", "<", "detect", "max", "each_char", "enum_for", ">", "to_i", "center", "inspect", "[]", "reverse!", "rindex", "partition", "delete", "[]=", "concat", "sub!", "dup", "<<"]
+>> 'Hello, Ruby'.index('Ruby')
+=> 7
+>> i = 0
+=> 0
+>> while i < 10
+>>   puts 'Mike Christianson <mike@codeaweso.me>'
+>> end
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>^CMike Christianson <mike@codeaweso.me>
+IRB::Abort: abort then interrupt!!
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb.rb:89:in `irb_abort'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb.rb:255:in `signal_handle'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb.rb:66:in `start'
+	from (irb):6:in `call'
+	from (irb):6:in `write'
+	from (irb):6:in `puts'
+	from (irb):6
+>> i = 0
+=> 0
+>> while i < 10
+>>   puts 'Mike Christianson <mike@codeaweso.me>'
+>>   i = i + 1
+>> end
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+Mike Christianson <mike@codeaweso.me>
+=> nil
