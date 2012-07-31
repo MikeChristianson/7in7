@@ -1,0 +1,114 @@
+mr-flibble:Day-2 mike$ ruby grep.rb
+^Cgrep.rb:2:in `gets': Interrupt
+	from grep.rb:2
+
+mr-flibble:Day-2 mike$ ruby grep.rb grep.rb
+^Cgrep.rb:2:in `gets': Interrupt
+	from grep.rb:2
+
+mr-flibble:Day-2 mike$ ruby grep.rb grep.rb
+grep.rb:5:in `foreach': can't convert nil into String (TypeError)
+	from grep.rb:5
+mr-flibble:Day-2 mike$ ruby grep.rb grep.rb
+grep.rb
+grep.rb:7:in `foreach': can't convert nil into String (TypeError)
+	from grep.rb:7
+mr-flibble:Day-2 mike$ ruby grep.rb puts grep.rb
+puts
+grep.rb
+1: puts ARGV
+2: 	if line.match(/puts/)
+3: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ 
+mr-flibble:Day-2 mike$ ruby grep.rb puts grep.rb
+1: 	if line.match(/puts/)
+2: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ ruby grep.rb puts n
+grep.rb:5:in `foreach': No such file or directory - n (Errno::ENOENT)
+	from grep.rb:5
+mr-flibble:Day-2 mike$ ruby grep.rb n grep.rb
+1: 	if line.match(/puts/)
+2: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ ruby grep.rb na grep.rb
+1: 	if line.match(/puts/)
+2: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ ruby grep.rb nafff grep.rb
+1: 	if line.match(/puts/)
+2: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ 
+mr-flibble:Day-2 mike$ ruby grep.rb nafff grep.rb
+mr-flibble:Day-2 mike$ ruby grep.rb nafff grep.rb
+mr-flibble:Day-2 mike$ ruby grep.rb n grep.rb
+1: filename = ARGV.shift
+2: n = 1
+3: IO.foreach(filename) do |line|
+4: 	regexp = Regexp.new(regexpStr)
+5: 	if regexp.match(line)
+6: 		puts "#{n}: #{line}"
+7: 		n += 1
+8: 	end
+9: end
+mr-flibble:Day-2 mike$ ruby grep.rb line grep.rb
+1: IO.foreach(filename) do |line|
+2: 	if regexp.match(line)
+3: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ ruby grep.rb regexp grep.rb
+1: regexpStr = ARGV.shift
+2: 	regexp = Regexp.new(regexpStr)
+3: 	if regexp.match(line)
+mr-flibble:Day-2 mike$ ruby grep.rb 'r.g' grep.rb
+1: regexpStr = ARGV.shift
+2: 	regexp = Regexp.new(regexpStr)
+3: 	if regexp.match(line)
+mr-flibble:Day-2 mike$ ruby grep.rb 'rag' grep.rb
+mr-flibble:Day-2 mike$ ruby grep.rb 'r.g' grep.rb
+1: regexpStr = ARGV.shift
+2: 	regexp = Regexp.new(regexpStr)
+3: 	if regexp.match(line)
+mr-flibble:Day-2 mike$ ruby grep.rb 'r.*g' grep.rb
+1: regexpStr = ARGV.shift
+2: 	regexp = Regexp.new(regexpStr)
+3: 	if regexp.match(line)
+mr-flibble:Day-2 mike$ ruby grep.rb 'l.*e' grep.rb
+1: filename = ARGV.shift
+2: IO.foreach(filename) do |line|
+3: 	if regexp.match(line)
+4: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ 
+mr-flibble:Day-2 mike$ git status
+-bash: git: command not found
+mr-flibble:Day-2 mike$ git
+-bash: git: command not found
+mr-flibble:Day-2 mike$ 
+
+
+
+
+
+
+
+
+
+
+mr-flibble:Day-2 mike$ wget http://media.pragprog.com/titles/btlang/code/ruby/units.rb
+--2012-07-30 20:19:01--  http://media.pragprog.com/titles/btlang/code/ruby/units.rb
+Resolving media.pragprog.com (media.pragprog.com)... 205.251.203.84, 205.251.203.138, 205.251.203.152, ...
+Connecting to media.pragprog.com (media.pragprog.com)|205.251.203.84|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 678 [text/plain]
+Saving to: `units.rb'
+
+100%[======================================>] 678         --.-K/s   in 0s      
+
+2012-07-30 20:19:03 (32.3 MB/s) - `units.rb' saved [678/678]
+
+mr-flibble:Day-2 mike$ 
+mr-flibble:Day-2 mike$ ruby units.rb
+-633600
+24
+mr-flibble:Day-2 mike$ ruby grep.rb 'l.*e' grep.rb
+1: filename = ARGV.shift
+2: File.new(filename).each do |line|
+3: 	if regexp.match(line)
+4: 		puts "#{n}: #{line}"
+mr-flibble:Day-2 mike$ 
