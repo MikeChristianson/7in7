@@ -1,0 +1,509 @@
+Script started on Mon Aug 20 09:32:36 2012
+[?1034hbash-3.2$ io
+Io 20110905
+Io> Vehicle := Object clone
+==>  Vehicle_0x2b6080:
+  type             = "Vehicle"
+
+Io> Vechile[K[K[K[K[Khicle description := "Something to take you places"
+==> Something to take you places
+Io> Vehicle description := "Something to take you places"[P=
+==> Something to take you places
+Io> Vehicle nonexistingSlot = "This won't work."
+
+  Exception: Slot nonexistingSlot not found. Must define slot using := operator before updating.
+  ---------
+  message 'updateSlot' in 'Command Line' on line 1
+
+Io> Vehidle[K[K[Kcle description
+==> Something to take you places
+Io> Vehicle slotNames
+==> list(description, type)
+Io> Vehicle type
+==> Vehicle
+Io> Object type
+==> Object
+Io> ~~~[K[K[KCar := v[KVehicle clone
+==>  Car_0x456df0:
+  type             = "Car"
+
+Io> Car slotNames
+==> list(type)
+Io> Car type
+==> Car
+Io> Car description
+==> Something to take you places
+Io> ferrari := Car clone
+==>  Car_0x467e70:
+
+Io> ferrari slotNames
+==> list()
+Io> ferrari type
+==> Car
+Io> Ferrari := Car clone
+==>  Ferrari_0x474220:
+  type             = "Ferrari"
+
+Io> Ferrari type
+==> Ferrari
+Io> Ferrari slotNames
+==> list(type)
+Io> ferrari slotNames
+==> list()
+Io> method("So, you've come for an argument"[K." println)([K
+==> method(
+    "So, you've come for an argument." println
+)
+Io> method() type
+==> Block
+Io> Car drive := method("Vroom",[K println)
+==> method(
+    "Vroom" println
+)
+Io> ferrari drive
+Vroom
+==> Vroom
+Io> ferrari drive type
+Vroom
+==> Sequence
+Io> ferrari getSlot("drive")
+==> method(
+    "Vroom" println
+)
+Io> ferrari getSlot("drive")
+==> method(
+    "Vroom" println
+)
+Io> ferrari getSlot("drive")")[K")[K")[K")[K")[Kt")y")p")e")
+==> Car
+Io> ferrari proto
+==>  Car_0x456df0:
+  drive            = method(...)
+  type             = "Car"
+
+Io> Car proto
+==>  Vehicle_0x2b6080:
+  description      = "Something to take you places"
+  type             = "Vehicle"
+
+Io> Lobby
+==>  Object_0x260cf0:
+  Car              = Car_0x456df0
+  Ferrari          = Ferrari_0x474220
+  Lobby            = Object_0x260cf0
+  Protos           = Object_0x260c60
+  Vehicle          = Vehicle_0x2b6080
+  _                = Object_0x260cf0
+  exit             = method(...)
+  ferrari          = Car_0x467e70
+  forward          = method(...)
+  set_             = method(...)
+
+Io> T[KtoDos := list("find my car", "find Continuum Transfunctioner")
+==> list(find my car, find Continuum Transfunctioner)
+Io> tO[KoDos size
+==> 2
+Io> toDos type
+==> List
+Io> toDos ~~=[K[K[Kproto
+==> list()
+Io> toDos getSlot[K[K[K[K[K[K[KslotNames
+==> list()
+Io> toDos append("Find a present")
+==> list(find my car, find Continuum Transfunctioner, Find a present)
+Io> list)([K[K(1, 2, 3, 4)
+==> list(1, 2, 3, 4)
+Io> list(1, 2, 3, 4)[1@tl[1@el[1@ml[1@pl[1@ l[1@:l[1@=l[Pl[1@=l[1@ l[1@L [1@i [1@s [1@t 
+==> list(1, 2, 3, 4)
+Io> tempList
+==> list(1, 2, 3, 4)
+Io> tempList average
+==> 2.5
+Io> tempList average[K[K[K[K[K[K[Ksum
+==> 10
+Io> tempList sum[K[K[Kat()1[K[K1)
+==> 2
+Io> tempList at(1)[K[K5[K-0[K[K[K(0)
+==> 1
+Io> tempList at(0)[K[K5)
+==> nil
+Io> tempList at(5)[K[K4)
+==> nil
+Io> append(5)[1@ta[1@ea[1@ma[1@pa[1@La[1@ia[1@sa[1@ta[1@ a
+==> list(1, 2, 3, 4, 5)
+Io> tempList pop
+==> 5
+Io> tempList popappend(5)[15Gt(4)[K5)0)1)[14Gsum[Kaverage[13G[K
+==> list(1, 2, 3, 4)
+Io> tempList pop
+==> 4
+Io> tempList pop[K
+==> list(1, 2, 3)
+Io> tempList prepend(0)
+==> list(0, 1, 2, 3)
+Io> tempList isEmpty
+==> false
+Io> list() isEmpty
+==> true
+Io> elvis := Map clone
+==>  Map_0x470e80:
+
+Io> elvis atPut("home", g[K"Graceland")
+==>  Map_0x470e80:
+
+Io> elvis at(home[K[K[K[K"home")
+==> Graceland
+Io> evlis atPut("style" "[K[K", "rock and roll")
+
+  Exception: Object does not respond to 'evlis'
+  ---------
+  Object evlis                         Command Line 1
+
+Io> evlis atPut("style", "rock and roll")[1@~e[1@~e[1@~e[Pe[Pe[Peevlis[P [P [P [P [P [1@e [1@l [1@v [1@i [1@s 
+==>  Map_0x470e80:
+
+Io> elvis
+==>  Map_0x470e80:
+
+Io> elvis asObject
+==>  Object_0x495d50:
+  home             = "Graceland"
+  style            = "rock and roll"
+
+Io> elvis type
+==> Map
+Scheduler: nothing left to resume so we are exiting
+  ---------
+  Coroutine callStack                  A4_Exception.io 244
+  Coroutine backTraceString            A4_Exception.io 274
+  Coroutine showStack                  A4_Exception.io 177
+  Coroutine pause                      A4_Exception.io 286
+
+bash-3.2$ io
+Io 20110905
+Io> Vehicle := Object clone[5G"Hi ho, Io" print[K[5GVehicle := Object clone[5G[Kelvis atPut("home", "Graceland")
+
+  Exception: Object does not respond to 'elvis'
+  ---------
+  Object elvis                         Command Line 1
+
+Io> elvis := Map clone
+==>  Map_0x275a90:
+
+Io> elvis := Map clone[11GatPut("home", "Graceland")
+==>  Map_0x275a90:
+
+Io> elciv s[K[K[K[Kvis atPut()[K"styole[K[K[Kle", "rock and roll")
+==>  Map_0x275a90:
+
+Io> elvis t[KasObject
+==>  Object_0x2f7290:
+  home             = "Graceland"
+  style            = "rock and roll"
+
+Io> elvis asList
+==> list(list(home, Graceland), list(style, rock and roll))
+Io> 4 < 5
+==> true
+Io> 4 <= 3
+==> false
+Io> false
+==> false
+Io> true and false
+==> false
+Io> tru eand[K[K[K[Ke and true
+==> true
+Io> true or false
+==> true
+Io> false or true
+==> true
+Io> 4 < 5 and 6>[K> [K > 7
+==> false
+Io> true and 6
+==> true
+Io> true and 0
+==> true
+Io> true proto
+==>  Object_0x207540:
+                   = Object_()
+  !=               = Object_!=()
+  -                = Object_-()
+  ..               = method(arg, ...)
+  <                = Object_<()
+  <=               = Object_<=()
+  ==               = Object_==()
+  >                = Object_>()
+  >=               = Object_>=()
+  ?                = method(...)
+  @                = method(...)
+  @@               = method(...)
+  actorProcessQueue = method(...)
+  actorRun         = method(...)
+  addTrait         = method(obj, ...)
+  ancestorWithSlot = Object_ancestorWithSlot()
+  ancestors        = method(a, ...)
+  and              = method(v, ...)
+  appendProto      = Object_appendProto()
+  apropos          = method(keyword, ...)
+  argIsActivationRecord = Object_argIsActivationRecord()
+  argIsCall        = Object_argIsCall()
+  asSimpleString   = method(...)
+  asString         = method(keyword, ...)
+  asyncSend        = method(...)
+  become           = Object_become()
+  block            = Object_block()
+  break            = Object_break()
+  clone            = Object_clone()
+  cloneWithoutInit = Object_cloneWithoutInit()
+  compare          = Object_compare()
+  contextWithSlot  = Object_contextWithSlot()
+  continue         = Object_continue()
+  coroDo           = method(...)
+  coroDoLater      = method(...)
+  coroFor          = method(...)
+  coroWith         = method(...)
+  currentCoro      = method(...)
+  deprecatedWarning = method(newName, ...)
+  do               = Object_do()
+  doFile           = Object_doFile()
+  doMessage        = Object_doMessage()
+  doRelativeFile   = method(path, ...)
+  doString         = Object_doString()
+  evalArg          = Object_evalArg()
+  evalArgAndReturnNil = Object_evalArgAndReturnNil()
+  evalArgAndReturnSelf = Object_evalArgAndReturnSelf()
+  for              = Object_for()
+  foreachSlot      = method(...)
+  futureSend       = method(...)
+  getLocalSlot     = Object_getLocalSlot()
+  getSlot          = Object_getSlot()
+  handleActorException = method(e, ...)
+  hasDirtySlot     = Object_hasDirtySlot()
+  hasLocalSlot     = Object_hasLocalSlot()
+  hasProto         = Object_hasProto()
+  hasSlot          = method(n, ...)
+  if               = Object_if()
+  ifError          = method(...)
+  ifNil            = Object_thisContext()
+  ifNilEval        = Object_thisContext()
+  ifNonNil         = Object_evalArgAndReturnSelf()
+  ifNonNilEval     = Object_evalArg()
+  in               = method(aList, ...)
+  init             = Object_init()
+  inlineMethod     = method(...)
+  isActivatable    = Object_isActivatable()
+  isError          = false
+  isIdenticalTo    = Object_isIdenticalTo()
+  isKindOf         = method(anObject, ...)
+  isLaunchScript   = method(...)
+  isNil            = false
+  isTrue           = true
+  justSerialized   = method(stream, ...)
+  launchFile       = method(path, args, ...)
+  lazySlot         = method(...)
+  lexicalDo        = Object_lexicalDo()
+  list             = method(...)
+  loop             = Object_loop()
+  markClean        = Object_markClean()
+  memorySize       = Object_memorySize()
+  message          = Object_message()
+  method           = Object_method()
+  newSlot          = method(name, value, doc, ...)
+  not              = nil
+  or               = true
+  ownsSlots        = Object_ownsSlots()
+  pause            = method(...)
+  perform          = Object_perform()
+  performWithArgList = Object_performWithArgList()
+  prependProto     = Object_prependProto()
+  print            = method(...)
+  println          = method(...)
+  proto            = Object_proto()
+  protos           = Object_protos()
+  raiseIfError     = method(...)
+  relativeDoFile   = method(path, ...)
+  removeAllProtos  = Object_removeAllProtos()
+  removeAllSlots   = Object_removeAllSlots()
+  removeProto      = Object_removeProto()
+  removeSlot       = Object_removeSlot()
+  resend           = method(...)
+  return           = Object_return()
+  returnIfError    = method(...)
+  returnIfNonNil   = Object_returnIfNonNil()
+  serialized       = method(stream, ...)
+  serializedSlots  = method(stream, ...)
+  serializedSlotsWithNames = method(names, stream, ...)
+  setIsActivatable = Object_setIsActivatable()
+  setProto         = Object_setProto()
+  setProtos        = Object_setProtos()
+  setSlot          = Object_setSlot()
+  setSlotWithType  = Object_setSlotWithType()
+  shallowCopy      = Object_shallowCopy()
+  slotDescriptionMap = method(...)
+  slotNames        = Object_slotNames()
+  slotSummary      = method(keyword, ...)
+  slotValues       = Object_slotValues()
+  stopStatus       = Object_stopStatus()
+  super            = method(...)
+  switch           = method(...)
+  thisContext      = Object_thisContext()
+  thisLocalContext = Object_thisLocalContext()
+  thisMessage      = Object_thisMessage()
+  try              = method(...)
+  type             = Object_type()
+  uniqueHexId      = method(...)
+  uniqueId         = Object_uniqueId()
+  updateSlot       = Object_updateSlot()
+  wait             = method(s, ...)
+  while            = Object_while()
+  write            = Object_write()
+  writeln          = Object_writeln()
+  yield            = method(...)
+
+Io> true type
+==> true
+Io> trye [K[Kue asObject[K[K[K[K[K[K[K[K[K[K[K[Ktrue clone
+==> true
+Io> false clone
+==> false
+Io> nil clone
+==> nil
+Io> Highlander := Object clone
+==>  Highlander_0x2cd020:
+  type             = "Highlander"
+
+Io> Highlander clone := Highlander
+==>  Highlander_0x2cd020:
+  clone            = Highlander_0x2cd020
+  type             = "Highlander"
+
+Io> Highlander clone
+==>  Highlander_0x2cd020:
+  clone            = Highlander_0x2cd020
+  type             = "Highlander"
+
+Io> Highlander clone
+==>  Highlander_0x2cd020:
+  clone            = Highlander_0x2cd020
+  type             = "Highlander"
+
+Io> fred = [K:= Highlander clone
+==>  Highlander_0x2cd020:
+  clone            = Highlander_0x2cd020
+  type             = "Highlander"
+
+Io> mike := Highlander clone
+==>  Highlander_0x2cd020:
+  clone            = Highlander_0x2cd020
+  type             = "Highlander"
+
+Io> free[Kd -=[K[K== mike
+==> true
+Io> one :=[K = Object clone
+==>  Object_0x4155c0:
+
+Io> two := Object clone
+==>  Object_0x2c2570:
+
+Io> one == two
+==> false
+Io> 1 + 1
+==> 2
+Io> 1 + 'one'
+
+  Exception: Object does not respond to '''
+  ---------
+  Object '                             Command Line 1
+
+Io> 1 + 'one'[K[K[K[K[K"one"
+
+  Exception: argument 0 to method '+' must be a Number, not a 'Sequence'
+  ---------
+  message '+' in 'Command Line' on line 1
+
+Io> 1 type
+==> Number
+Io> "one" type
+==> Sequence
+Io> 1 proto
+==> 0
+Io> "one" proto
+==> 
+Io> ./typescript [K[K[K[K[K[K[K[K[K[K[K[K0
+==> 0
+Io> 0 and 0
+==> true
+Io> "" and ""
+==> true
+Io> nil and nil
+==> false
+Io> 1 and 1
+==> true
+Io> nil or nil
+==> false
+Io> 0 or 1
+==> true
+Io> 0 or nil
+==> true
+Io> 1 or nil
+==> true
+Io> 0 slots[KNames
+==> list()
+Io> nil slotNames
+==> list(asString, pass, ifNonNil, type, ifNil, asSimpleString, and, elseif, clone, else, ifNilEval, not, justSerialized, then, isNil, ifNonNilEval, or, isTrue, catch)
+Io> "" slotNames
+==> list(type)
+Io> "" proto
+==> 
+Io> "" type
+==> ImmutableSequence
+Io> Sequence slotNames
+==> list(log, sequenceSets, linePrint, beforeSeq, pathComponent, urlDecoded, removeSeq, bitwiseAnd, removeOddIndexes, uppercase, findSeq, alignLeftInPlace, asDecodedList, logicalOr, +, with, asSimpleString, at, beginsWithSeq, containsAnyCaseSeq, square, splitNoEmpties, sizeInBytes, cos, asFile, byteAt, asIoPath, removeEvenIndexes, <=, endsWithSeq, between, preallocateToSize, asBinarySignedInteger, sqrt, size, alignRight, isSymbol, interpolate, z, copy, removeSlice, cloneAppendSeq, asJson, asLowercase, slice, afterSeq, abs, lstrip, asBuffer, log10, max, setY, print, replaceFirstSeq, translate, setX, validEncodings, <, setSize, reverse, reverseFindSeq, appendSeq, encoding, acos, isUppercase, atPut, slicesBetween, setItemsToDouble, *, Max, foreach, setItemType, duplicateIndexes, asSymbol, sinh, removeAt, set, sum, betweenSeq, /=, inclusiveSlice, clipAfterSeq, makeFirstCharacterLowercase, atan, asHex, repeated, itemCopy, unpack, splitAt, addEquals, asNumber, withStruct, product, prependSeq, justSerialized, ceil, bitwiseNot, validItemTypes, setItemsToLong, -=, tanh, asList, exSlice, asFixedSizeType, removeSuffix, unescape, -, removeLast, >=, asBase64, asMutable, normalize, exclusiveSlice, replaceMap, inSlice, asUCS4, floor, clipBeforeSeq, percentEncoded, lowercase, tan, asUppercase, orderedSplit, sort, convertToFixedSizeType, append, isZero, empty, +=, toBase, rangeFill, replaceSeq, x, asin, asStruct, zero, lastPathComponent, cloneAppendPath, setEncoding, min, occurancesOfSeq, convertToItemType, split, itemSize, Min, capitalize, strip, pack, findSeqs, percentDecoded, isEmpty, rootMeanSquare, *=, >, asBinaryNumber, contains, /, findNthSeq, asBinaryUnsignedInteger, .., asUTF8, bitCount, itemType, cosh, makeFirstCharacterUppercase, atInsertSeq, fromBase, clipBeforeEndOfSeq, sin, bitAt, meanSquare, negate, mean, asOSPath, containsSeq, removePrefix, alignLeft, reverseInPlace, asString, isEqualAnyCase, whiteSpaceStrings, stringByExpandingTilde, escape, bitwiseXor, urlEncoded, leaveThenRemove, interpolateInPlace, isLowercase, isMutable, y, fromBase64, distanceTo, insertSeqEvery, alignCenter, clipAfterStartOfSeq, hash, appendPathSeq, pathExtension, cPrint, asMessage, fileName, asCapitalized, dotProduct, bitwiseOr, asUCS2, rstrip, setZ)
+Io> ^D
+bash-3.2$ nano  
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.0.6                New Buffer                                      [23;1H^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[1;71H(B[0;7mModified[3d(B[m"[KNumber factorial := method(n := 1; for(i, 1, self, n = n * i); n)[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write:                                         [23d^G(B[m Get Help[23;21H(B[0;7m^T(B[m To Files[23;41H(B[0;7mM-M(B[m Mac Format[61G(B[0;7mM-P(B[m Prepend[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[24;61H(B[0;7mM-B(B[m Backup File[22;21H[22;33H[1K (B[0;7m[ Cancelled ](B[m[K[23;14H(B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3;66H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write:                                         [23d^G(B[m Get Help[23;21H(B[0;7m^T(B[m To Files[23;41H(B[0;7mM-M(B[m Mac Format[61G(B[0;7mM-P(B[m Prepend[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[24;61H(B[0;7mM-B(B[m Backup File[22;21H(B[0;7mf(B[m(B[0;7ma(B[m(B[0;7mc(B[m(B[0;7mt(B[m(B[0;7mo(B[m(B[0;7mr(B[m(B[0;7mi(B[m(B[0;7ma(B[m(B[0;7ml(B[m(B[0;7m.(B[m(B[0;7mi(B[m(B[0;7mo(B[m[23d[39;49m(B[m[J[1;30H(B[0;7mFile: factorial.io[1;71H        [22;32H(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[24;80H[24;1H[?1049l[?1l>bash-3.2$ nano[2Pio
+Io 20110905
+Io> d[KdoFile("factorial[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K5 factorial
+==> 120
+Io> ^D
+bash-3.2$ f io[2@nano factorial.io 
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.0.6             File: factorial.io                                 [3;1H(B[mNumber factorial := method(n := 1; for(i, 1, self, n = n * i); n)[22;33H(B[0;7m[ Read 1 line ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3dNumber factorial [1;71H(B[0;7mModified[3;17H(B[m_ := method(n := 1; for(i, 1, self, n = n * i); n)[3;18Hm := method(n := 1; for(i, 1, self, n = n * i); n)[3;19Hi := method(n := 1; for(i, 1, self, n = n * i); n)[3;20Hk := method(n := 1; for(i, 1, self, n = n * i); n)[3;21He := method(n := 1; for(i, 1, self, n = n * i); n)[3;22H[1P[1P[22d[K[3;20H[1P[1P[1PM := method(n := 1; for(i, 1, self, n = n * i); n)[3;18Hi := method(n := 1; for(i, 1, self, n = n * i); n)[3;19Hk := method(n := 1; for(i, 1, self, n = n * i); n)[3;20He := method(n := 1; for(i, 1, self, n = n * i); n)[3;21H[1P[1P[1P[1PF := method(n := 1; for(i, 1, self, n = n * i); n)[3;18H[1PS := method(n := 1; for(i, 1, self, n = n * i); n)[3;18Ha := method(n := 1; for(i, 1, self, n = n * i); n)[3;19Hm := method(n := 1; for(i, 1, self, n = n * i); n)[3;20Hp := method(n := 1; for(i, 1, self, n = n * i); n)[3;21Hl := method(n := 1; for(i, 1, self, n = n * i); n)[3;22He := method(n := 1; for(i, 1, self, n = n * i); n)[3;23H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: factorial.io                            [23d^G(B[m Get Help[23;21H(B[0;7m^T(B[m To Files[23;41H(B[0;7mM-M(B[m Mac Format[61G(B[0;7mM-P(B[m Prepend[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[24;61H(B[0;7mM-B(B[m Backup File[22;33H[23d[39;49m(B[m[J[1;71H(B[0;7m        [22;32H(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[24;80H[24;1H[?1049l[?1l>bash-3.2$ nano factorial.io bash-3.2$ io[K
+Io 20110905
+Io> 12[K[K5 factorial[K[K[K[K[K[K[K[K[K[K5 factorialSample
+
+  Exception: Number does not respond to 'factorialSample'
+  ---------
+  Number factorialSample               Command Line 1
+
+Io> doFile("factorial.io")
+==> # factorial.io:1
+method(
+    n := 1; for(i, 1, self, n = n * i); n
+)
+Io> doFile("factorial.io")[5G5 factorialSample[K
+==> 120
+Io> Number perform("factorial", 5)
+==> 1
+Io> Number hasSlot("factorial")
+==> true
+Io> Number slotNames
+==> list(constants, bitwiseComplement, >>, exp, permutations, bitwiseAnd, log, isInASequenceSet, log2, asin, toBaseWholeBytes, round, asSimpleString, isUppercase, isSpace, tan, floor, asUppercase, isLetter, cos, ^, squared, shortMin, mod, toBase, isHexDigit, toggle, sqrt, max, asUint32Buffer, negate, combinations, min, asBinary, cubed, asJson, asLowercase, clip, between, bitwiseOr, isAlphaNumeric, abs, unsignedIntMax, log10, shiftLeft, %, roundDown, repeat, shiftRight, +, /, integerMax, unsignedLongMax, floatMax, **, asOctal, &, factorial, at, asString, isNan, sin, acos, longMax, isPrint, |, isOdd, *, -, isPunctuation, isControlCharacter, <<, bitwiseXor, factorialSample, pow, isEven, isLowercase, asHex, minMax, isGraph, asCharacter, atan2, isDigit, asBuffer, asNumber, justSerialized, atan, ceil, longMin, integerMin, floatMin, shortMax)
+Io> 13 as Hex
+==> 0d
+Io> 13 perform("asN[KHex")_
+==> 0d
+Io> 13 perform("asHex")_[K
+==> 0d
+Io> 13 perform("asHex")_[8G[9P[13G[K[5GNumber slotNames sort
+==> list(%, &, *, **, +, -, /, <<, >>, ^, abs, acos, asBinary, asBuffer, asCharacter, asHex, asJson, asLowercase, asNumber, asOctal, asSimpleString, asString, asUint32Buffer, asUppercase, asin, at, atan, atan2, between, bitwiseAnd, bitwiseComplement, bitwiseOr, bitwiseXor, ceil, clip, combinations, constants, cos, cubed, exp, factorial, factorialSample, floatMax, floatMin, floor, integerMax, integerMin, isAlphaNumeric, isControlCharacter, isDigit, isEven, isGraph, isHexDigit, isInASequenceSet, isLetter, isLowercase, isNan, isOdd, isPrint, isPunctuation, isSpace, isUppercase, justSerialized, log, log10, log2, longMax, longMin, max, min, minMax, mod, negate, permutations, pow, repeat, round, roundDown, shiftLeft, shiftRight, shortMax, shortMin, sin, sqrt, squared, tan, toBase, toBaseWholeBytes, toggle, unsignedIntMax, unsignedLongMax, |)
+Io> 13 asJson
+==> 13
+Io> "13" slotNames sort
+==> list()
+Io> "123[K[K3" asHex
+==> 3133
+Io> ^D
+bash-3.2$ exit
+exit
+
+Script done on Mon Aug 20 11:28:34 2012
