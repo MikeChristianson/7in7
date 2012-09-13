@@ -4,7 +4,9 @@ List valueOutOfPlace := method(position,
 
 List stepItBack := method(position,
   swapIndices(position-1, position)
-  if (position > 1, position = position - 1)
+  if(position > 1, 
+    position = position - 1
+  )
   position
 )
 
@@ -17,7 +19,8 @@ List gnomeSort := method(
   while(position < size,
     if(valueOutOfPlace(position),
        position = stepItBack(position),
-       position = moveForward(position))
+       position = moveForward(position)
+    )
   )
 )
 
