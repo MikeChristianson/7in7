@@ -1,0 +1,2 @@
+Shoot=Space
+Darn=Plant
